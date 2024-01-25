@@ -16,7 +16,7 @@ field.forEach((hole) => {
       document.getElementById("lost").innerText = molesMissed;
     }
 
-    if (molesDead === 10) {
+    if (molesDead === 10 && molesMissed < 5) {
       alert('Вы победили!');
       document.getElementById("dead").innerText = 0;
       document.getElementById("lost").innerText = 0;
