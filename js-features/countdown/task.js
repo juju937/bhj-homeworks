@@ -1,4 +1,4 @@
-const seconds = 59;
+let seconds = 59;
 
 setInterval(function() {
   seconds -= 1;
