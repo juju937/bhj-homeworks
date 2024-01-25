@@ -8,7 +8,7 @@ cookie.addEventListener("click", () => {
   });
 
 function changeCookieSize() {
-  if (cookie.width = 200) {
+  if (cookie.width === 200) {
     cookie.width = 250;
   } else {
     cookie.width = 200;;
