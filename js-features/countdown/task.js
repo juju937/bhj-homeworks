@@ -1,10 +1,10 @@
 let seconds = 59;
 
-setInterval(function() {
+let timer = setInterval(function() {
   seconds -= 1;
     if(seconds === 0){
       alert('Вы победили в конкурсе!');
-      clearInterval(seconds);
+      clearInterval(timer);
     }
     document.getElementById("timer").innerText = seconds;
 }, 1000);
