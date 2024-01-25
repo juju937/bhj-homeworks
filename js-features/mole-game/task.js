@@ -18,12 +18,14 @@ field.forEach((hole) => {
 
     if (molesMissed === 5) {
       alert('Вы проиграли!');
-      document.getElementById("dead").innerText = 0;
-      document.getElementById("lost").innerText = 0;
     } else if (molesDead === 10 && molesMissed < 5) {
       alert('Вы победили!');
-      document.getElementById("dead").innerText = 0;
-      document.getElementById("lost").innerText = 0;
     }
+
+    molesDead = 0;
+    document.getElementById("dead").innerText = 0;
+    molesMissed = 0;
+    document.getElementById("lost").innerText = 0;
+
   })
 })
