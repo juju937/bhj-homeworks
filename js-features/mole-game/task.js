@@ -15,3 +15,13 @@ hole.addEventListener("click", () => {
   }
   });
 });
+
+if (molesDead === 10) {
+  alert('Вы победили!');
+  molesDead = 0;
+  molesMissed = 0;
+} else if (molesMissed === 5) {
+  alert('Вы проиграли!');
+  molesDead = 0;
+  molesMissed = 0;
+}
