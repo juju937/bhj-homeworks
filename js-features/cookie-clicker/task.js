@@ -1,7 +1,7 @@
 let clicks = 0;
-let clickerCounter = document.getElementById("clicker__counter");
+let cookie = document.getElementById("cookie");
 
-clickerCounter.addEventListener("click", () => {
+cookie.addEventListener("click", () => {
   clicks++;
-  clickerCounter.innerText = clicks;
+  document.getElementById("clicker__counter").innerText = clicks;
   });
