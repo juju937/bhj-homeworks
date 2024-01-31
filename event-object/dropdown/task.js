@@ -8,7 +8,7 @@ let dropdownItem = Array.from(document.querySelectorAll('.dropdown__item'));
 
 dropdownItem.forEach((item) => {
 item.addEventListener("click", () => {
-  item.preventDefault();
+  document.querySelectorAll('.dropdown__link').preventDefault();
   document.querySelector('.dropdown__list').classList.remove("dropdown__list_active");
   this.closest('.dropdown__value').children[0].textContent = this.textContent;
 })
