@@ -1,4 +1,4 @@
-document.getElementsByClassName("dropdown__link").addEventListener("click", function(event){
+document.querySelector(".dropdown__link").addEventListener("click", function(event){
   event.preventDefault()
 });
 
