@@ -34,7 +34,7 @@ class Game {
       }
     }
   
-  document.addEventListener('keyup', pressKey)
+  window.addEventListener('keyup', pressKey)
   }
 
   success() {
