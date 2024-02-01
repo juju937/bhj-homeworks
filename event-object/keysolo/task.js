@@ -27,7 +27,7 @@ class Game {
      */
   function pressKey (event) {
       let theKey = event.code;
-      if (theKey === this.currentSymbol.textContent) {
+      if (theKey === this.currentSymbol) {
         this.success();
       } else {
         this.fail();
