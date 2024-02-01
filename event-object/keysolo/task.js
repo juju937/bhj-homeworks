@@ -34,7 +34,7 @@ class Game {
       }
     }
   
-  this.currentSymbol.addEventListener('keyup', pressKey)
+  document.addEventListener('keyup', pressKey)
   }
 
   success() {
