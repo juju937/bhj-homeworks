@@ -9,7 +9,7 @@ let dropdownItem = Array.from(document.querySelectorAll('.dropdown__item'));
 dropdownItem.forEach((item) => {
 item.addEventListener("click", function(event) {
   event.preventDefault()
+  document.querySelector('.dropdown__value').textContent = item.textContent;
   document.querySelector('.dropdown__list').classList.remove("dropdown__list_active");
-  this.closest('.dropdown__value').children[0].textContent = this.textContent;
 })
 })
