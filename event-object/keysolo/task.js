@@ -26,7 +26,7 @@ class Game {
       DOM-элемент текущего символа находится в свойстве this.currentSymbol.
      */
   function pressKey (event) {
-      let theKey = String.fromCharCode(event.code);
+      let theKey = event.code;
       if (theKey === this.currentSymbol.textContent) {
         this.success();
       } else {
@@ -34,7 +34,7 @@ class Game {
       }
     }
   
-  window.addEventListener('keyup', pressKey)
+  document.addEventListener('keyup', pressKey)
   }
 
   success() {
