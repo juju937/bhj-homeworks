@@ -1,10 +1,9 @@
 let dropdownButton = document.querySelector('.dropdown__value');
+let dropdownItem = Array.from(document.querySelectorAll('.dropdown__item'));
 
 dropdownButton.addEventListener("click", () => {
   document.querySelector('.dropdown__list').classList.add("dropdown__list_active");
 });
-
-let dropdownItem = Array.from(document.querySelectorAll('.dropdown__item'));
 
 dropdownItem.forEach((item) => {
 item.addEventListener("click", function(event) {
