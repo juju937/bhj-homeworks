@@ -1,13 +1,20 @@
-let rotator = document.querySelectorAll('.rotator__case');
+function rotateAds() {
 
-rotator.forEach((element, index) => {
-  setInterval(()=>{
-  const currentlyActive = document.querySelector(".rotator__case.rotator__case_active");
-  if (currentlyActive) {
+  let rotator = Array.from(document.querySelectorAll('.rotator__case'));
+  let index = 0;
+
+  setInterval(() => {
+    let currentlyActive = document.querySelector('.rotator__case.rotator__case_active');
+
+    if (rotator.indexOf(currentlyActive) === rotator.length-1) {
+      index = 0;
+    } else {
+      index++;
+    }
+
     currentlyActive.classList.remove('rotator__case_active');
-  }
-  element.classList.add('rotator__case_active');
-  document.querySelector('.rotator>.rotator__case_active').classList.remove('rotator__case_active');
-  document.querySelector(`.rotator>:nth-child(${index + 1})`).classList.add('rotator__case_active');
-  }, index * 1000);
-})
+    rotator[index].classList.add('rotator__case_active');
+  }, 1000);
+}
+
+rotateAds()
