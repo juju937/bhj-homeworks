@@ -10,4 +10,4 @@ setInterval(()=>{
     document.querySelector('.rotator>.rotator__case_active').classList.remove('rotator__case_active');
     document.querySelector(`.rotator>:nth-child(${index + 1})`).classList.add('rotator__case_active');
   })
-}, 1000);
+}, index * 1000);
