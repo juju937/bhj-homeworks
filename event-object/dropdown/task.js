@@ -1,9 +1,11 @@
 let dropdownButton = document.querySelectorAll('.dropdown__value');
 let dropdownItem = document.querySelectorAll('.dropdown__item');
 
-dropdownButton.addEventListener("click", () => {
+dropdownButton.forEach((button) => {
+button.addEventListener("click", () => {
   document.querySelectorAll('.dropdown__list').classList.add("dropdown__list_active");
 });
+})
 
 dropdownItem.forEach((item) => {
 item.addEventListener("click", function(event) {
