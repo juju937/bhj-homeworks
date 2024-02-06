@@ -1,9 +1,9 @@
-let dropdownButton = document.getElementsByClassName('.dropdown__value');
-let dropdownItem = document.getElementsByClassName('.dropdown__item');
+let dropdownButton = document.getElementsByClassName('dropdown__value');
+let dropdownItem = document.getElementsByClassName('dropdown__item');
 
 dropdownButton.forEach((button) => {
 button.addEventListener("click", () => {
-  document.getElementsByClassName('.dropdown__list').classList.add("dropdown__list_active");
+  document.getElementsByClassName('dropdown__list').classList.add("dropdown__list_active");
 });
 })
 
