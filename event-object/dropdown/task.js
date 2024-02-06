@@ -12,6 +12,6 @@ dropdownItem.forEach((item) => {
 item.addEventListener("click", function(event) {
   event.preventDefault()
   dropdownList.closest('.dropdown').querySelector('.dropdown__value').textContent = item.textContent;
-  dropdownItem.closest('.dropdown__list').classList.remove("dropdown__list_active");
+  item.closest('.dropdown__list').classList.remove("dropdown__list_active");
 })
 })
