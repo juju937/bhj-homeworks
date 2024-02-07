@@ -10,11 +10,12 @@ fontSizeButtons.forEach((item) => {
       }
     item.classList.add("font-size_active");
     
-    if (item.dataset.size === 'small') {
-      book.classList.add('book_fs-small');
-    } 
-    if (item.dataset.size === 'big') {
-      book.classList.add('book_fs-big');
+    if (item.classList.contains('font-size_small')) {
+      book.classList.add('book_fs-small')
+    }
+
+    if (item.classList.contains('font-size_big')) {
+      book.classList.add('book_fs-big')
     }
   })
 })
