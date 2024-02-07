@@ -2,7 +2,8 @@ let fontSizeButtons = document.querySelectorAll('.font-size');
 let book = document.getElementById('book');
 
 fontSizeButtons.forEach((item) => {
-  item.addEventListener('click', () => {
+  item.addEventListener('click', function(event) {
+    event.preventDefault()
     let currentlySelectedSize = document.querySelector(".font-size.font-size_active");
       if (currentlySelectedSize) {
         currentlySelectedSize.classList.remove("font-size_active");
